@@ -1,0 +1,158 @@
+/* feedback.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7e9; /* hijau muda agar nyaman di mata */
+}
+
+/* --- TOPBAR/NAVBAR --- */
+.main {
+  background-color: #2e8b57;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list ul,
+.list2 ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li,
+.list2 li {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.list li.logo img {
+  width: 36px;
+  height: 36px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #0000ff;
+  border-radius: 15px;
+  transition: 0.6s ease;
+}
+
+.search input[type="text"]:hover {
+  background-color: #dcdcdc;
+}
+
+.search input[type="image"] {
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #00f;
+  background-color: #fff;
+  transition: 0.6s ease;
+}
+
+.search input[type="image"]:hover {
+  background-color: #739ac5;
+}
+
+.list2 li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.list2 li a:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+
+.list2 li.active-menu a {
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+
+/* --- FEEDBACK FORM --- */
+.feedback {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 40px auto 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback h1 {
+  text-align: center;
+  color: #2e8b57;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control,
+.inputTextarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.inputTextarea {
+  resize: vertical;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #3cb371;
+}
